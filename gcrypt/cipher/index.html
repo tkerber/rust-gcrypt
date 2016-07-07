@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `cipher` mod in crate `gcrypt`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, cipher">
+
+    <title>gcrypt::cipher - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>gcrypt</a></p><script>window.sidebarCurrent = {name: 'cipher', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>gcrypt</a>::<wbr><a class='mod' href=''>cipher</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1108' class='srclink' href='../../src/gcrypt/src/cipher.rs.html#1-245' title='goto source code'>[src]</a></span></h1>
+<h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Algorithm.html'
+                                  title='gcrypt::cipher::Algorithm'>Algorithm</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Cipher.html'
+                                  title='gcrypt::cipher::Cipher'>Cipher</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Flags.html'
+                                  title='gcrypt::cipher::Flags'>Flags</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Mode.html'
+                                  title='gcrypt::cipher::Mode'>Mode</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_3DES.html'
+                                  title='gcrypt::cipher::CIPHER_3DES'>CIPHER_3DES</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_AES.html'
+                                  title='gcrypt::cipher::CIPHER_AES'>CIPHER_AES</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_AES128.html'
+                                  title='gcrypt::cipher::CIPHER_AES128'>CIPHER_AES128</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_AES192.html'
+                                  title='gcrypt::cipher::CIPHER_AES192'>CIPHER_AES192</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_AES256.html'
+                                  title='gcrypt::cipher::CIPHER_AES256'>CIPHER_AES256</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_ARCFOUR.html'
+                                  title='gcrypt::cipher::CIPHER_ARCFOUR'>CIPHER_ARCFOUR</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_BLOWFISH.html'
+                                  title='gcrypt::cipher::CIPHER_BLOWFISH'>CIPHER_BLOWFISH</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_CAMELLIA128.html'
+                                  title='gcrypt::cipher::CIPHER_CAMELLIA128'>CIPHER_CAMELLIA128</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_CAMELLIA192.html'
+                                  title='gcrypt::cipher::CIPHER_CAMELLIA192'>CIPHER_CAMELLIA192</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_CAMELLIA256.html'
+                                  title='gcrypt::cipher::CIPHER_CAMELLIA256'>CIPHER_CAMELLIA256</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_CAST5.html'
+                                  title='gcrypt::cipher::CIPHER_CAST5'>CIPHER_CAST5</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_CHACHA20.html'
+                                  title='gcrypt::cipher::CIPHER_CHACHA20'>CIPHER_CHACHA20</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_DES.html'
+                                  title='gcrypt::cipher::CIPHER_DES'>CIPHER_DES</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_DES_SK.html'
+                                  title='gcrypt::cipher::CIPHER_DES_SK'>CIPHER_DES_SK</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_GOST28147.html'
+                                  title='gcrypt::cipher::CIPHER_GOST28147'>CIPHER_GOST28147</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_IDEA.html'
+                                  title='gcrypt::cipher::CIPHER_IDEA'>CIPHER_IDEA</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_RFC2268_128.html'
+                                  title='gcrypt::cipher::CIPHER_RFC2268_128'>CIPHER_RFC2268_128</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_RFC2268_40.html'
+                                  title='gcrypt::cipher::CIPHER_RFC2268_40'>CIPHER_RFC2268_40</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_RIJNDAEL.html'
+                                  title='gcrypt::cipher::CIPHER_RIJNDAEL'>CIPHER_RIJNDAEL</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_RIJNDAEL128.html'
+                                  title='gcrypt::cipher::CIPHER_RIJNDAEL128'>CIPHER_RIJNDAEL128</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_RIJNDAEL192.html'
+                                  title='gcrypt::cipher::CIPHER_RIJNDAEL192'>CIPHER_RIJNDAEL192</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_RIJNDAEL256.html'
+                                  title='gcrypt::cipher::CIPHER_RIJNDAEL256'>CIPHER_RIJNDAEL256</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_SAFER_SK128.html'
+                                  title='gcrypt::cipher::CIPHER_SAFER_SK128'>CIPHER_SAFER_SK128</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_SALSA20.html'
+                                  title='gcrypt::cipher::CIPHER_SALSA20'>CIPHER_SALSA20</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_SALSA20R12.html'
+                                  title='gcrypt::cipher::CIPHER_SALSA20R12'>CIPHER_SALSA20R12</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_SEED.html'
+                                  title='gcrypt::cipher::CIPHER_SEED'>CIPHER_SEED</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_SERPENT128.html'
+                                  title='gcrypt::cipher::CIPHER_SERPENT128'>CIPHER_SERPENT128</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_SERPENT192.html'
+                                  title='gcrypt::cipher::CIPHER_SERPENT192'>CIPHER_SERPENT192</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_SERPENT256.html'
+                                  title='gcrypt::cipher::CIPHER_SERPENT256'>CIPHER_SERPENT256</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_TWOFISH.html'
+                                  title='gcrypt::cipher::CIPHER_TWOFISH'>CIPHER_TWOFISH</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.CIPHER_TWOFISH128.html'
+                                  title='gcrypt::cipher::CIPHER_TWOFISH128'>CIPHER_TWOFISH128</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.FLAGS_NONE.html'
+                                  title='gcrypt::cipher::FLAGS_NONE'>FLAGS_NONE</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.FLAG_CBC_CTS.html'
+                                  title='gcrypt::cipher::FLAG_CBC_CTS'>FLAG_CBC_CTS</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.FLAG_CBC_MAC.html'
+                                  title='gcrypt::cipher::FLAG_CBC_MAC'>FLAG_CBC_MAC</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.FLAG_ENABLE_SYNC.html'
+                                  title='gcrypt::cipher::FLAG_ENABLE_SYNC'>FLAG_ENABLE_SYNC</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.FLAG_SECURE.html'
+                                  title='gcrypt::cipher::FLAG_SECURE'>FLAG_SECURE</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_AESWRAP.html'
+                                  title='gcrypt::cipher::MODE_AESWRAP'>MODE_AESWRAP</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_CBC.html'
+                                  title='gcrypt::cipher::MODE_CBC'>MODE_CBC</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_CCM.html'
+                                  title='gcrypt::cipher::MODE_CCM'>MODE_CCM</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_CFB.html'
+                                  title='gcrypt::cipher::MODE_CFB'>MODE_CFB</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_CFB8.html'
+                                  title='gcrypt::cipher::MODE_CFB8'>MODE_CFB8</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_CTR.html'
+                                  title='gcrypt::cipher::MODE_CTR'>MODE_CTR</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_ECB.html'
+                                  title='gcrypt::cipher::MODE_ECB'>MODE_ECB</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_GCM.html'
+                                  title='gcrypt::cipher::MODE_GCM'>MODE_GCM</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_OCB.html'
+                                  title='gcrypt::cipher::MODE_OCB'>MODE_OCB</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_OFB.html'
+                                  title='gcrypt::cipher::MODE_OFB'>MODE_OFB</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_POLY1305.html'
+                                  title='gcrypt::cipher::MODE_POLY1305'>MODE_POLY1305</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='constant' href='constant.MODE_STREAM.html'
+                                  title='gcrypt::cipher::MODE_STREAM'>MODE_STREAM</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "gcrypt";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

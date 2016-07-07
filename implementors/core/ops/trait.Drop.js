@@ -1,0 +1,10 @@
+(function() {var implementors = {};
+implementors['gcrypt'] = ["impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='gcrypt/struct.Buffer.html' title='gcrypt::Buffer'>Buffer</a>","impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='gcrypt/mpi/integer/struct.Integer.html' title='gcrypt::mpi::integer::Integer'>Integer</a>","impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='gcrypt/mpi/point/struct.Point.html' title='gcrypt::mpi::point::Point'>Point</a>","impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='gcrypt/mpi/ec/struct.Context.html' title='gcrypt::mpi::ec::Context'>Context</a>","impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='gcrypt/sexp/struct.SExpression.html' title='gcrypt::sexp::SExpression'>SExpression</a>","impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='gcrypt/cipher/struct.Cipher.html' title='gcrypt::cipher::Cipher'>Cipher</a>","impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='gcrypt/digest/struct.MessageDigest.html' title='gcrypt::digest::MessageDigest'>MessageDigest</a>","impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='gcrypt/mac/struct.Mac.html' title='gcrypt::mac::Mac'>Mac</a>",];
+
+            if (window.register_implementors) {
+                window.register_implementors(implementors);
+            } else {
+                window.pending_implementors = implementors;
+            }
+        
+})()
